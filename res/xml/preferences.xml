@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/prefs_loc_provider_title">
+		<ListPreference android:entryValues="@array/location_providers" 
+						android:entries="@array/location_providers" 
+						android:title="Current provider" 
+						android:dialogTitle="Select provider" 
+						android:enabled="true" 
+						android:selectable="true" 
+						android:summary="Click to pop up a list to choose from" 
+						android:key="currentProvider"/>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:title="@string/prefs_service_control_title">
+		<CheckBoxPreference android:title="@string/pref_service_enable" 
+							android:enabled="true" 
+							android:selectable="true" 
+							android:key="serviceState"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

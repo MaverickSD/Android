@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Application name -->
+    <string name="app_name">CLManager</string>
+          	
+	<!-- default name for outcoming (own) calls -->    
+	<string name="my_contact_name">My phone</string>
+	
+	<!--expanded message title -->
+	<string name="notification_title">Calls Log Manager</string>
+	
+	<!--expanded message text -->
+	<string name="notification_text">Android test application</string>
+		
+	<!-- elements of map context menu -->
+	<string name="cm_satellite">Satellite</string>
+	<string name="cm_map">Map</string>
+	<string name="cm_header">Map mode</string>
+	
+	<string name="call_title"> call</string>
+	<string name="calls_title"> calls</string>
+
+	<string name="outcoming_title">outcoming</string>
+	<string name="incoming_title">incoming</string>
+	<string name="missed_title">missed</string>	
+
+<string name="menu_all_calls">Show All</string>
+<string name="menu_last_call">Show Last</string>
+<string name="menu_map_mode">Map Mode</string>
+<string name="number_label">Number: </string>
+<string name="date_label">Date: </string>
+<string name="time_label">Time: </string>
+<string name="initializing_title">Updating</string>
+<string name="prefs_service_control_title">Service Control</string>
+<string name="prefs_loc_provider_title">Location Provider</string>
+<string name="pref_service_enable">Logging Enabled</string>
+
+<string-array name="location_providers"><item>GPS</item>
+<item>Network</item>
+</string-array>
+</resources>

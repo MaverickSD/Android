@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+  
+    <!-- Location method header -->
+  	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+  		android:layout_height="25dip"
+  		android:orientation="horizontal">
+  		
+        <TextView        	
+        	android:layout_width="wrap_content"
+            android:layout_height="fill_parent"            
+            android:textStyle="bold" 
+            android:textSize="16dip"
+            android:text="Location Provider"
+            android:gravity="center_vertical" >            
+        </TextView>
+        
+        <!-- Separator -->
+		<View  
+			android:layout_marginLeft="10dip"
+			android:layout_width="fill_parent"  
+			android:layout_height="1dip"
+			android:layout_gravity="center_vertical"  
+			android:background="#F0FFFFFF" />           		
+	</LinearLayout>  	
+  
+   <RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="20dip"
+      android:orientation="vertical">      
+      <RadioButton android:id="@+id/loc_gps"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:checked = "true"
+          android:text="GPS" />
+      <RadioButton android:id="@+id/loc_network"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Network Location" />
+    </RadioGroup>
+  
+  	<!-- Service control header -->
+  	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+  		android:layout_height="25dip"
+  		android:orientation="horizontal">
+  		
+        <TextView        	
+        	android:layout_width="wrap_content"
+            android:layout_height="fill_parent"            
+            android:textStyle="bold" 
+            android:textSize="16dip"
+            android:text="Service Control"
+            android:gravity="center_vertical" >            
+        </TextView>
+        
+        <!-- Separator -->
+		<View  
+			android:layout_marginLeft="10dip"
+			android:layout_width="fill_parent"  
+			android:layout_height="1dip"
+			android:layout_gravity="center_vertical"  
+			android:background="#F0FFFFFF" />           		
+	</LinearLayout>  	
+  	
+  	<!-- Service buttons -->
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"    	
+    	android:stretchColumns="*">
+
+	    <TableRow>
+	  		<Button 
+  				android:id="@+id/start_srv"
+	            android:layout_column="1"
+	            android:text="Start"
+	            android:padding="5dip" />
+	  		<Button 
+  				android:id="@+id/stop_srv"
+	            android:layout_column="2"
+	            android:text="Stop"
+	            android:padding="5dip" />	            
+	    </TableRow>
+	    
+	</TableLayout>  		  	
+  
+</LinearLayout>
